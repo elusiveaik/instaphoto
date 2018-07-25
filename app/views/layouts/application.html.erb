@@ -10,8 +10,25 @@
   </head>
 
   <body>
-<%= link_to "Главная", root_path %>
-<%= link_to "О нас", pages_about_path %>
+
+    <div class="container-fluid container-background">
+      <div class="container">
+
+           <ul class="nav">
+            <li class="nav-item">
+              <li class="nav-link active">
+                <%= link_to "Instaphoto", root_path, class: 'nav-landing' %>
+              </il>
+            </li>
+            <li class="nav-item">
+               <li class="nav-link">
+                <%= link_to "О проекте", pages_about_path, 
+                class: 'nav-landing' %>
+              </il>
+            </li>
+           </ul>
     <%= yield %>
+    </div>
+    </div>
   </body>
 </html>
